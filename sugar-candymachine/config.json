@@ -1,0 +1,24 @@
+{
+  "price": 0.01,
+  "number": 50,
+  "symbol": "KCAT",
+  "sellerFeeBasisPoints": 500,
+  "gatekeeper": null,
+  "solTreasuryAccount": "31meFEobSui8edJ5HBir7oPM2NQMtph4guspxsicomPA",
+  "splTokenAccount": null,
+  "splToken": null,
+  "goLiveDate": "2024-03-11T00:00:00Z",
+  "endSettings": null,
+  "whitelistMintSettings": null,
+  "hiddenSettings": null,
+  "uploadMethod": "bundlr",
+  "awsS3Bucket": null,
+  "retainAuthority": true,
+  "isMutable": true,
+  "creators": [
+    {
+      "address": "31meFEobSui8edJ5HBir7oPM2NQMtph4guspxsicomPA",
+      "share": 100
+    }
+  ]
+}
