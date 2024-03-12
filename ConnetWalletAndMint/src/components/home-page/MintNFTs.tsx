@@ -1,6 +1,14 @@
 import { Tag } from "antd";
+import UseContractMintNFTsCatHook from "../../hooks/UseContractMintNFTsCatHook";
 
 const MintNFTs = () => {
+  const { UseGetCandyMachineId } = UseContractMintNFTsCatHook();
+
+  const hanldeMintNFT = () => {
+    const candyMC = UseGetCandyMachineId();
+    console.log({ candyMC });
+  }
+
   return (
     <main className="mint-page">
       <div className="container">
@@ -19,17 +27,17 @@ const MintNFTs = () => {
               fontSize: '30px',
               borderRadius: '20px'
             }}>
-              Random NFT
+              K-CATs Collection
             </div>
             <div className="mt-3">
-              <button className="btn btn-mint">
-                Mint NFTs&nbsp;
+              <button onClick={hanldeMintNFT} className="btn btn-mint">
+                Mint NFT&nbsp;
               </button>
             </div>
           </div>
           <div className="fw-bold mt-3">
             Total estimated cost (fees included) :
-            <span className="ms-2"><Tag color="cyan">Fee: 0.0001 Ether</Tag></span>
+            <span className="ms-2"><Tag color="cyan">Fee: 0.01 Sol</Tag></span>
           </div>
         </div>
 
